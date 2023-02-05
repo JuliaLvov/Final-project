@@ -50,3 +50,11 @@ void NewArrayWith3SymbolElements(string[] array, string[] array2)
         }
     }
 }
+
+string[] array = newArray();
+string[] array2 = new string[array.Length];
+Console.WriteLine("Исходный массив: ");
+PrintArray(array);
+NewArrayWith3SymbolElements(array, array2);
+Console.WriteLine("Массив из строк, длина которых меньше либо равна 3 символа: ");
+PrintArray(array2);
