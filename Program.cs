@@ -21,7 +21,7 @@ string[] newArray()
     return a;
 }
 
-Console.WriteLine(newArray);
+
 
 //печать массива
 void PrintArray(string[] array)
@@ -33,4 +33,20 @@ void PrintArray(string[] array)
 
     }
     Console.WriteLine();
+}
+
+// метод создания массива менше 3-х символов
+void NewArrayWith3SymbolElements(string[] array, string[] array2)
+{
+    int count = 0;
+    int maxIndex = 3;
+    for (int i = 0; i < array.Length; i++)
+    {
+
+        if (array[i].Length <= maxIndex)
+        {
+            array2[count] = array[i];
+            count++;
+        }
+    }
 }
